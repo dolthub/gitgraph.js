@@ -7,8 +7,6 @@ import {
 import * as React from "react";
 import { ReactElement } from "react";
 import { ReactSvgElement } from "./types";
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const d3 = require("d3");
 
 interface BranchPathProps {
   branch: Branch<ReactElement<SVGElement>>;
@@ -81,17 +79,12 @@ export class BranchPath extends React.Component<BranchPathProps, any> {
   }
 }
 
-function hexToColorMatrixVariant(hex?: string) {
-  const rgb = d3.color(hex);
-  const r = rgb.r / 255;
-  const g = rgb.g / 255;
-  const b = rgb.b / 255;
-
-  const returnMatrix = [
-    [0, 0, 0, 0, r], // red
-    [0, 0, 0, 0, g], // green
-    [0, 0, 0, 0, b], // blue
-    [0, 0, 0, 0.5, 0], // multiplier
-  ];
-  return d3.merge(returnMatrix).join(" ");
+function hexToColorMatrixVariant(hex?: string): string {
+  if (!hex) {
+    return "";
+  }
+  const r = parseInt(hex.substring(1, 3), 16) / 255;
+  const g = parseInt(hex.substring(3, 5), 16) / 255;
+  const b = parseInt(hex.substring(5, 7), 16) / 255;
+  return `0 0 0 0 ${r} 0 0 0 0 ${g} 0 0 0 0 ${b} 0 0 0 0.5 0`;
 }
