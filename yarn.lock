@@ -1068,6 +1068,23 @@
     openurl "1.1.1"
     yargs "6.6.0"
 
+"@dolthub/gitgraph-core@1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@dolthub/gitgraph-core/-/gitgraph-core-1.5.0.tgz#638f20bbc56195c7e9b2b0d5488239a3d84eac6a"
+  integrity sha512-jYvcFI07QdQPWe5S+wTiQ1n1ISdiCK6bxP/PwYHuXlw92AokoLsAbW7a8k/tnnolq1mmwckGQGhssTA9+ABLpg==
+
+"@dolthub/gitgraph-core@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@dolthub/gitgraph-core/-/gitgraph-core-1.6.0.tgz#f5ae8165d54c67118f1b5b049035837abb837ae7"
+  integrity sha512-6o9ckWE2Tmh4vV8awjVOqGunJJreCjAOANdbbdwaI6i43gQTAFMbVK8d29vLiMoDerN4dX1y0rD/dTphd8tMVA==
+
+"@dolthub/gitgraph-react@1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@dolthub/gitgraph-react/-/gitgraph-react-1.6.0.tgz#d20776c531fe38860ae5a565e2b83e58daec5c83"
+  integrity sha512-WN3JGsWFZRxBNJCQAT+PEM4CD97s8INaJTVN5g2yQT+tiGJeVO4dsmGMFb1v/wRjbV+RoYDs5JDJ0abNhcxNfA==
+  dependencies:
+    "@dolthub/gitgraph-core" "1.5.0"
+
 "@emotion/cache@^10.0.9":
   version "10.0.9"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.9.tgz#e0c7b7a289f7530edcfad4dcf3858bd2e5700a6f"
