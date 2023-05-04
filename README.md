@@ -1,6 +1,6 @@
 ## Package updates
 
-This package includes changes to the original [GitGraph.js](https://github.com/nicoespeon/gitgraph.js) package to take commit info from [DoltHub](https://wwww.dolthub.com) in order to support pagination and [something else here if there is something].
+This package includes changes to the original [GitGraph.js](https://github.com/nicoespeon/gitgraph.js) package to take commit info from [DoltHub](https://www.dolthub.com) in order to support pagination and [something else here if there is something].
 The changes have been implemented in two sub-packages: `core` and `react`.
 
 ## Publishing
